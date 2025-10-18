@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Volkai HR — Company Login Documentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+  <header class="header">
+  <div class="left">
+    <img 
+      src="images/logo.png" 
+      alt="Volkai HR Logo" 
+      class="logo-img"
+    />
+  </div>
+
+  <h1><span>Volkai HR</span> Documentation</h1>
+
+  <!-- Toggle -->
+  <div id="docToggle" class="doc-toggle-wrapper" role="group" aria-label="Documentation Type">
+    <button id="userBtn" class="doc-toggle-btn active" type="button" aria-pressed="true">User</button>
+    <button id="companyBtn" class="doc-toggle-btn" type="button" aria-pressed="false">Company</button>
+  </div>
+</header>
+
+
+  <!-- Toggle + overlay -->
+  <button class="toggle-btn" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <div class="overlay" id="overlay"></div>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <h2>📘 Contents</h2>
+      <ul>
+        <li><a href="#exec">Executive Summary</a></li>
+        <li><a href="#overview">Functional Overview</a></li>
+        <li><a href="#login">Login Page Overview</a></li>
+        <li><a href="#dashboard">Dashboard Overview</a></li>
+        <li><a href="#employees">Employees Page</a></li>
+        <li><a href="#interviews">Interviews Page</a></li>
+        <li><a href="#onboarding">Onboarding Page</a></li>
+        <li><a href="#jobs">Jobs Page</a></li>
+        <li><a href="#calling">Calling Agent Interface</a></li>
+        <li><a href="#whatsapp">WhatsApp Agent Interface</a></li>
+        <li><a href="#plans">Plans Page</a></li>
+        <li><a href="#settings">Settings Page</a></li>
+        <li><a href="#tech">Technical Overview</a></li>
+        <li><a href="#trouble">Troubleshooting</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#visual">Visual Summary (Figures)</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content" id="mainContent">
+
+      <section id="exec" class="section">
+        <h2>1. Executive Summary</h2>
+        <p>
+          This document provides a comprehensive guide to the Company Login section of <strong>hr.volkai.io</strong>. It explains all pages, functions, and workflows designed for company administrators and employees. The portal enables organizations to streamline recruitment, manage job roles, automate candidate communication, and leverage AI-powered tools such as Calling Agents and WhatsApp Agents.
+        </p>
+        <p>
+          The Company Login portal ensures efficient coordination between HR teams and automated AI systems, allowing organizations to focus on strategic hiring decisions rather than repetitive manual tasks.
+        </p>
+      </section>
+
+      <section id="overview" class="section">
+        <h2>2. Functional Overview</h2>
+        <ul>
+          <li><strong>Company Login (Admin Access):</strong> For HR heads and managers. Allows adding employees, creating job listings, and controlling AI agents (Calling and WhatsApp).</li>
+          <li><strong>Employee Login (Limited Access):</strong> For recruiters or staff with restricted access — can view data but not add new employees.</li>
+        </ul>
+        <p>
+          Both logins share a similar dashboard layout. Access rights are determined by user role and permissions.
+        </p>
+      </section>
+
+      <section id="login" class="section">
+        <h2>3. Login Page Overview</h2>
+        <ul>
+          <li>Select “Company Login” from the main login screen.</li>
+          <li>Choose between “Company Login” or “Employee Login.”</li>
+          <li>Enter Email and Password, then click Login.</li>
+          <li>Successful authentication loads the dashboard automatically.</li>
+        </ul>
+        <div class="figure">Figure 1: Company Login Interface (screenshot placeholder)</div>
+      </section>
+
+      <section id="dashboard" class="section">
+        <h2>4. Dashboard Overview</h2>
+        <p>
+          After login, users are directed to the Dashboard — the central hub of the company portal.
+        </p>
+        <ul>
+          <li>Employees</li>
+          <li>Interviews</li>
+          <li>Onboarding</li>
+          <li>Jobs</li>
+          <li>Calling Agent</li>
+          <li>WhatsApp Agent</li>
+          <li>Plans</li>
+          <li>Settings</li>
+        </ul>
+        <div class="figure">Figure 2: Dashboard Layout (screenshot placeholder)</div>
+      </section>
+
+      <section id="employees" class="section">
+        <h2>5. Employees Page</h2>
+        <ul>
+          <li>View all employees under the company account.</li>
+          <li>Add, edit, or delete employee profiles (Admin only).</li>
+          <li>Filter and search by name, department, or designation.</li>
+          <li>Employee Login: Read-only access.</li>
+        </ul>
+        <div class="figure">Figure 3: Employees Page (screenshot placeholder)</div>
+      </section>
+
+      <section id="interviews" class="section">
+        <h2>6. Interviews Page</h2>
+        <ul>
+          <li>View ongoing and completed interviews.</li>
+          <li>Monitor live interview progress.</li>
+          <li>Access feedback and candidate details.</li>
+          <li>Filter by job position or candidate status.</li>
+        </ul>
+        <div class="figure">Figure 4: Interviews Page (screenshot placeholder)</div>
+      </section>
+
+      <section id="onboarding" class="section">
+        <h2>7. Onboarding Page</h2>
+        <ul>
+          <li>Track onboarding candidates.</li>
+          <li>Monitor documentation progress and joining dates.</li>
+          <li>Filter by department or onboarding status.</li>
+        </ul>
+        <div class="figure">Figure 5: Onboarding Page (screenshot placeholder)</div>
+      </section>
+
+      <section id="jobs" class="section">
+        <h2>8. Jobs Page</h2>
+        <ul>
+          <li>Post, edit, or delete job openings.</li>
+          <li>Assign jobs to departments.</li>
+          <li>View candidate lists and interview outcomes.</li>
+        </ul>
+        <div class="figure">Figure 6: Job Management Interface (screenshot placeholder)</div>
+      </section>
+
+      <section id="calling" class="section">
+        <h2>9. Calling Agent Interface</h2>
+        <ul>
+          <li>Upload candidate resumes (ZIP or CSV).</li>
+          <li>Filter by status: All, Sent Mail, Interested, Pending, etc.</li>
+          <li>Trigger AI phone calls to candidates with pre-set questions.</li>
+        </ul>
+        <div class="figure">Figure 8: Calling Agent Dashboard (screenshot placeholder)</div>
+      </section>
+
+      <section id="whatsapp" class="section">
+        <h2>10. WhatsApp Agent Interface</h2>
+        <ul>
+          <li>Automated AI chat with candidates.</li>
+          <li>Imports data from the Calling Agent module.</li>
+          <li>AI handles conversation flow dynamically.</li>
+        </ul>
+        <div class="figure">Figure 10: WhatsApp Agent Interface (screenshot placeholder)</div>
+      </section>
+
+      <section id="plans" class="section">
+        <h2>11. Plans Page</h2>
+        <ul>
+          <li>Displays subscription tiers: Starter, Growth, Custom.</li>
+          <li>Shows call limits, interview quotas, and upgrades.</li>
+        </ul>
+        <div class="figure">Figure 11: Plans Page (screenshot placeholder)</div>
+      </section>
+
+      <section id="settings" class="section">
+        <h2>12. Settings Page</h2>
+        <ul>
+          <li>Update company info (name, logo, contact).</li>
+          <li>Configure WhatsApp, SMTP, and AI agent integrations.</li>
+          <li>Manage permissions and logout securely.</li>
+        </ul>
+        <div class="figure">Figure 12: Settings Page (screenshot placeholder)</div>
+      </section>
+
+      <section id="tech" class="section">
+        <h2>13. Technical Overview</h2>
+        <ul>
+          <li>AI Voice Agent for phone-based interviews.</li>
+          <li>AI WhatsApp Agent for messaging.</li>
+          <li>Resume Parser for candidate data extraction.</li>
+          <li>Analytics Engine for hiring insights.</li>
+          <li>Job Management API for real-time sync.</li>
+        </ul>
+      </section>
+
+      <section id="trouble" class="section">
+        <h2>14. Troubleshooting</h2>
+        <table>
+          <tr><th>Issue</th><th>Possible Cause</th><th>Solution</th></tr>
+          <tr><td>Login Failure</td><td>Wrong credentials</td><td>Use “Forgot Password.”</td></tr>
+          <tr><td>Resume Upload Error</td><td>Wrong format</td><td>Use ZIP or CSV format.</td></tr>
+          <tr><td>Trigger Call Not Working</td><td>Network delay</td><td>Refresh and retry.</td></tr>
+          <tr><td>WhatsApp Agent Inactive</td><td>Disconnected integration</td><td>Reconnect via Settings.</td></tr>
+          <tr><td>Dashboard Not Loading</td><td>Cache issue</td><td>Clear cache and re-login.</td></tr>
+        </table>
+      </section>
+
+      <section id="support" class="section">
+        <h2>15. Support</h2>
+        <ul>
+          <li>Email: <a href="mailto:hello@volkai.io">hello@volkai.io</a></li>
+          <li>Phone: +91 9321786099</li>
+          <li>Address: DLF Prime Towers, Okhla Phase 1, Delhi-110020</li>
+        </ul>
+      </section>
+
+      <section id="visual" class="section">
+        <h2>16. Visual Summary (Figure Index)</h2>
+        <table>
+          <tr><th>S.No.</th><th>Page Title / Section</th><th>Description</th></tr>
+          <tr><td>1</td><td>Login Page Overview</td><td>Company & Employee login options.</td></tr>
+          <tr><td>2</td><td>Dashboard Overview</td><td>Main dashboard layout.</td></tr>
+          <tr><td>3</td><td>Employees Page</td><td>Employee management interface.</td></tr>
+          <tr><td>4</td><td>Interviews Page</td><td>Interview tracking interface.</td></tr>
+          <tr><td>5</td><td>Onboarding Page</td><td>New hire tracking interface.</td></tr>
+          <tr><td>6</td><td>Jobs Page</td><td>Job postings and candidate view.</td></tr>
+          <tr><td>7</td><td>Calling Agent</td><td>AI call dashboard.</td></tr>
+          <tr><td>8</td><td>WhatsApp Agent</td><td>AI chat interface.</td></tr>
+          <tr><td>9</td><td>Plans Page</td><td>Subscription comparison.</td></tr>
+          <tr><td>10</td><td>Settings Page</td><td>Configuration options.</td></tr>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

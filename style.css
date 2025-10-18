@@ -1,0 +1,363 @@
+/* =========================================================================
+   Volkai HR Documentation — Main Stylesheet
+   Theme: Light • Navy Blue / Orange / White
+   Author: Volkai HR Team
+   ======================================================================== */
+
+/* ---------- Root Color Variables ---------- */
+:root {
+  --primary: #0a2540;
+  --accent: #ff7a00;
+  --light-bg: #f7f8fa;
+  --white: #ffffff;
+  --text-dark: #1a1a1a;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
+/* ---------- Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ---------- Header ---------- */
+/* ---------- Header ---------- */
+header.header {
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px; /* Reduced height */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* --- Balanced logo size --- */
+.logo-img {
+  height: 60px; /* Reduced from 100% */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* --- Centered title --- */
+header.header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.8rem; /* Slightly smaller for balance */
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+header.header h1 span {
+  color: var(--accent);
+}
+
+header.header h1:hover {
+  text-shadow: 0 0 10px rgba(255, 122, 0, 0.6);
+}
+
+/* --- Toggle Buttons --- */
+.doc-toggle-wrapper {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px var(--shadow);
+  min-width: 160px;
+}
+
+.doc-toggle-btn {
+  flex: 1;
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--primary);
+}
+
+.doc-toggle-btn.active {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.doc-toggle-btn:hover:not(.active) {
+  background-color: rgba(255, 122, 0, 0.1);
+}
+
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  width: 260px;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px var(--shadow);
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: var(--light-bg);
+  color: var(--primary);
+}
+
+.sidebar a.active {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* ---------- Container & Content ---------- */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  margin-left: 280px;
+  padding: 40px 60px;
+  flex: 1;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  color: var(--primary);
+  border-left: 5px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.section h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.section p, .section ul, .section table {
+  margin-bottom: 20px;
+}
+
+.section ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.figure {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px var(--shadow);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+td {
+  background-color: #fff;
+}
+
+/* ---------- Buttons ---------- */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1200;
+  display: none;
+}
+
+.toggle-btn:hover {
+  background: #e36e00;
+}
+
+/* ---------- Overlay ---------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 37, 64, 0.5);
+  display: none;
+  z-index: 100;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* ---------- Back to Top ---------- */
+#backToTop {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 1200;
+}
+#backToTop.show {
+  opacity: 1;
+}
+#backToTop:hover {
+  background: #e36e00;
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    transform: translateX(-100%);
+    height: calc(100% - 80px);
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
+  header.header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo-img {
+    height: 70px;
+  }
+
+  header.header h1 {
+    position: relative;
+    transform: none;
+    left: auto;
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
+  .doc-toggle-wrapper {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
