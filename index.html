@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volkai HR — User Login Documentation</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
     </div>
   </header>
 
-  <!-- Toggle + overlay -->
+  <!-- Sidebar toggle + overlay -->
   <button class="toggle-btn" id="menuToggle" aria-label="Toggle menu">☰</button>
   <div class="overlay" id="overlay"></div>
   <button id="backToTop" aria-label="Back to top">↑</button>
@@ -34,7 +35,7 @@
     <nav class="sidebar" id="sidebar">
       <h2>📘 Contents</h2>
       <ul>
-        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#intro" class="active">Introduction</a></li>
         <li><a href="#exec">Executive Summary</a></li>
         <li><a href="#overview">Functional Overview</a></li>
         <li><a href="#landing">Landing Page</a></li>
@@ -59,17 +60,14 @@
       <!-- Introduction -->
       <section id="intro" class="section">
         <h2>🌐 Introduction to Volkai HR Platform</h2>
-        <p>
-          <strong>Volkai HR</strong> is a next-generation AI recruitment platform that transforms how candidates and companies connect. 
+        <p><strong>Volkai HR</strong> is a next-generation AI recruitment platform that transforms how candidates and companies connect. 
           It leverages Artificial Intelligence to streamline hiring, automate interviews, and deliver actionable insights for both recruiters and job seekers.
         </p>
-
         <p>The platform is divided into two main portals:</p>
         <ul>
           <li><strong>User Portal (Candidate Interface):</strong> For individuals appearing in AI-driven interviews, reviewing feedback, and enhancing their career through personalized recommendations.</li>
           <li><strong>Company Portal (Employer Interface):</strong> For organizations to manage recruitment, automate candidate communication, and analyze hiring performance.</li>
         </ul>
-
         <p>Volkai HR empowers users through:</p>
         <ul>
           <li>🤖 <strong>AI-Powered Interviews</strong> – Smart, role-specific assessments that mimic real interview experiences.</li>
@@ -77,21 +75,14 @@
           <li>💬 <strong>Automated Communication</strong> – Integrated AI Calling and WhatsApp Agents for seamless candidate outreach.</li>
           <li>💼 <strong>Career Tools</strong> – Resume builder, AI career advisor, and mock preparation modules.</li>
         </ul>
-
-        <p>
-          This documentation focuses on the <strong>User Login Portal</strong>, providing a detailed walkthrough of every page, feature, and process to help candidates make the most of Volkai HR’s intelligent ecosystem.
-        </p>
-
-        <div class="figure">
-          Figure 1: Volkai HR — Empowering Intelligent Hiring with AI
-        </div>
+        <p>This documentation focuses on the <strong>User Login Portal</strong>, providing a detailed walkthrough of every page, feature, and process to help candidates make the most of Volkai HR’s intelligent ecosystem.</p>
+        <div class="figure">Figure 1: Volkai HR — Empowering Intelligent Hiring with AI</div>
       </section>
 
       <!-- Executive Summary -->
       <section id="exec" class="section">
         <h2>1. Executive Summary</h2>
-        <p>
-          This document provides a comprehensive guide for candidates using hr.volkai.io. It explains how to register, start interviews, and interpret AI-generated performance reports.
+        <p>This document provides a comprehensive guide for candidates using hr.volkai.io. It explains how to register, start interviews, and interpret AI-generated performance reports.
           The User Portal enhances job seekers’ readiness and confidence through realistic simulations and continuous feedback.
         </p>
       </section>
@@ -171,12 +162,9 @@
       <!-- Previous Interview Reports -->
       <section id="prev" class="section">
         <h2>7. Previous Interview Reports</h2>
-
-        <p>
-          The <strong>Previous Interview Reports</strong> section displays all completed AI interviews. 
+        <p>The <strong>Previous Interview Reports</strong> section displays all completed AI interviews. 
           Each record provides a clear performance snapshot and opens into a detailed scorecard.
         </p>
-
         <ul>
           <li>Summarizes past interviews with date, job title, and overall score.</li>
           <li>Displays a modern <strong>Performance Score</strong> card with detailed analytics:
@@ -194,13 +182,10 @@
           <li>Shows a <strong>circular progress chart</strong> for overall performance.</li>
           <li>Option to open full <strong>AI-generated feedback report</strong> with detailed metrics and suggestions.</li>
         </ul>
-
-        <div class="figure">
-          Figure 6: Previous Interview Reports Page showing the new Performance Score layout with metrics, star ratings, and progress indicator.
-        </div>
+        <div class="figure">Figure 6: Previous Interview Reports Page with metrics, star ratings, and progress indicator.</div>
       </section>
 
-      <!-- Remaining sections -->
+      <!-- Prepare with AI -->
       <section id="prepare" class="section">
         <h2>8. Prepare with AI</h2>
         <ul>
@@ -211,6 +196,7 @@
         <div class="figure">Figure 7: Prepare with AI Page (screenshot placeholder)</div>
       </section>
 
+      <!-- AI Career Advisor -->
       <section id="advisor" class="section">
         <h2>9. AI Career Advisor</h2>
         <ul>
@@ -220,6 +206,7 @@
         <div class="figure">Figure 8: AI Career Advisor Dashboard (screenshot placeholder)</div>
       </section>
 
+      <!-- AI Resume Builder -->
       <section id="resume" class="section">
         <h2>10. AI Resume Builder</h2>
         <ul>
@@ -229,6 +216,7 @@
         <div class="figure">Figure 9: AI Resume Builder Interface (screenshot placeholder)</div>
       </section>
 
+      <!-- View Profile -->
       <section id="profile" class="section">
         <h2>11. View Profile</h2>
         <ul>
@@ -238,6 +226,7 @@
         <div class="figure">Figure 10: View Profile Page (screenshot placeholder)</div>
       </section>
 
+      <!-- Technical Overview -->
       <section id="tech" class="section">
         <h2>12. Technical Overview</h2>
         <ul>
@@ -247,6 +236,7 @@
         </ul>
       </section>
 
+      <!-- Troubleshooting -->
       <section id="trouble" class="section">
         <h2>13. Troubleshooting</h2>
         <table>
@@ -257,6 +247,7 @@
         </table>
       </section>
 
+      <!-- Support -->
       <section id="support" class="section">
         <h2>14. Support</h2>
         <ul>
@@ -266,6 +257,7 @@
         </ul>
       </section>
 
+      <!-- Visual Summary -->
       <section id="visual" class="section">
         <h2>15. Visual Summary (Figure Index)</h2>
         <table>
@@ -282,6 +274,5 @@
     </main>
   </div>
 
-  <script src="main.js"></script>
 </body>
 </html>

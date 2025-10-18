@@ -20,7 +20,7 @@ if (toggleBtn && sidebar && overlay) {
   });
 }
 
-/* ========== Simple Toggle (User <-> Company) ========== */
+/* ========== User <-> Company Toggle ========== */
 const userBtn = document.getElementById("userBtn");
 const companyBtn = document.getElementById("companyBtn");
 
@@ -61,8 +61,10 @@ sidebarLinks.forEach((link) => {
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
-    sidebar.classList.remove("active");
-    overlay.classList.remove("active");
+    if (window.innerWidth <= 900) {
+      sidebar.classList.remove("active");
+      overlay.classList.remove("active");
+    }
   });
 });
 
